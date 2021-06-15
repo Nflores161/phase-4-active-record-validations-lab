@@ -1,2 +1,3 @@
-class Post < ApplicationRecord
+class Post < ApplicationRecord::Base
+  validates :name, presence: true
 end
